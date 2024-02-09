@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  min-height: 100vh;
+  background-color: black;
+  flex-direction: column;
+}
+
+.buttons>button {
+  padding: 8px;
+  margin: 10px;
+}
