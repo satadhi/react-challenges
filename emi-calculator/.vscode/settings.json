@@ -1,0 +1,13 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.codeActionsOnSave": {},
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "files.associations": {
+    "\"*.css\"": "\"tailwindcss\""
+  },
+  "workbench.editorAssociations": {
+    "\"*.css\"": "\"tailwindcss\""
+  }
+}
