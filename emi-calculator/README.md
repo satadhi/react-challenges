@@ -11,3 +11,6 @@
 - ‘P’ stands for the Principal Amount. It is the original loan amount given to you by the bank on which the interest will be calculated.
 - ‘R’ stands for the Rate of Interest set by the bank.
 - ‘N’ is the Number of Years given to you for loan repayment.
+
+
+![Screenshot from 2024-03-26 01-32-24](https://github.com/satadhi/react-challenges/assets/25204832/4945821c-09db-49fc-b473-4b3c078b89cc)
