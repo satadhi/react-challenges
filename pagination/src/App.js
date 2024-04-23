@@ -16,21 +16,24 @@ export default function App() {
     });
   }, []);
 
-  function serverSidePagination() {
+  function serverSidePagination(posCalled) {
+    // console.log("serverSidePagination", posCalled * size);
+
+    let tempSkip = posCalled * size;
     axios
-      .get(`https://dummyjson.com/products?limit=${size}&skip=${skip + size}`)
+      .get(`https://dummyjson.com/products?limit=${size}&skip=${tempSkip}`)
       .then((res) => {
         console.log(res);
         setItems(res.data.products);
         setTotal(res.data.total);
-        setSkip(skip + size);
+        setSkip(tempSkip);
       });
   }
 
   return (
-    <div>
+    <div className="w-4/5 m-auto">
       <div className="p-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {items.map((item, index) => {
             return (
               <div className="border p-5 rounded-sm" key={item.id}>
@@ -56,7 +59,6 @@ export default function App() {
         total={total}
         serverSidePagination={serverSidePagination}
       />
-      ;
     </div>
   );
 }
