@@ -1,0 +1,28 @@
+.product-list {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+}
+
+.page-details{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.item{
+ border: 1px solid black;
+ padding: 4px;
+ margin: 4px;
+ cursor: 
+}
+
+.page-details-keys{
+  border: 1px solid black;
+  padding: 8px;
+  margin: 5px;
+}
