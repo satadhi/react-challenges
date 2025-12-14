@@ -6,6 +6,10 @@ const posts = [
   { id: 1, title: "momo master" },
   { id: 2, title: "Charls" },
 ];
+
+// for methods like posts/1
+//you can update the queryKey array as ['post', 1] something like this
+
 function App() {
   const queryClient = useQueryClient();
   const postQuery = useQuery({
